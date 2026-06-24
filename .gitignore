@@ -1,3 +1,11 @@
 ProjectPlan.docx
 reports/report.html
 tests/reports/report.html
+reports/allure-results/076829d2-55fa-4ba5-ade6-93e5e573507c-container.json
+/reports/allure-results
+*.log
+*.pyc
+*.pyc
+*.pyc
+*.pyc
+/utils/__pycache__

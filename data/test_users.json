@@ -1,0 +1,14 @@
+{
+  "users": [
+    {
+      "name": "Data Driven User 1",
+      "gender": "male",
+      "status": "active"
+    },
+    {
+      "name": "Data Driven User 2",
+      "gender": "female",
+      "status": "inactive"
+    }
+  ]
+}
