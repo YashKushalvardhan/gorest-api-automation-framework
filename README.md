@@ -3,7 +3,7 @@
 ![GitHub Actions](https://github.com/YashKushalvardhan/gorest-api-automation-framework/actions/workflows/ci.yml/badge.svg)
 [![Python](https://img.shields.io/badge/Python-3.11-blue.svg)](https://www.python.org/)
 [![Pytest](https://img.shields.io/badge/Pytest-8.3.3-green.svg)]()
-[![Description](images)]
+
 A comprehensive **REST API Automation Framework** built with Python, Pytest, and Requests. Designed to demonstrate professional API testing skills (3+ years experience level).
 
 ---
