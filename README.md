@@ -162,12 +162,19 @@ Reports are uploaded as artifacts.
 ---
 
 
-## Screenshots
+## 📷 Screenshots
 
-<image-card alt="GitHub Actions" src="images/ci-success.png" ></image-card>
-<image-card alt="Allure Report" src="images/allure-dashboard.png" ></image-card>
-<image-card alt="HTML Report" src="images/html-report.png" ></image-card>
-<image-card alt="Terminal execution" src="images/test-execution-terminal.png" ></image-card>
+### 1. GitHub Actions CI/CD Pipeline
+![GitHub Actions Success](images/ci-success.png)
+
+### 2. pytest-html Report
+![HTML Test Report](images/html-report.png)
+
+### 3. Allure Report Dashboard
+![Allure Report](images/allure-dashboard.png)
+
+### 4. Terminal Test Execution + Logs
+![Test Execution](images/test-execution-terminal.png)
 
 ---
 
