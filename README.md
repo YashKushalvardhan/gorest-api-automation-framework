@@ -161,9 +161,8 @@ Reports are uploaded as artifacts.
 
 ---
 
-##  Screenshots
 
-### Screenshots
+## Screenshots
 
 <image-card alt="GitHub Actions" src="images/ci-success.png" ></image-card>
 <image-card alt="Allure Report" src="images/allure-dashboard.png" ></image-card>
