@@ -10,3 +10,21 @@ reports/allure-results/076829d2-55fa-4ba5-ade6-93e5e573507c-container.json
 *.pyc
 /utils/__pycache__
 ~$ojectPlan.docx
+
+# Environment variables
+.env
+*.env
+
+# Reports & Logs (optional - agar chaho to ignore kar sakte ho)
+reports/
+*.log
+
+# Python cache
+__pycache__/
+*.pyc
+venv/
+.venv/
+
+# OS files
+.DS_Store
+Thumbs.db
