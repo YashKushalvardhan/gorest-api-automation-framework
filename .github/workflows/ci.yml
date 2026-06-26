@@ -1,0 +1,56 @@
+name: GoREST API Automation CI
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout Code
+      uses: actions/checkout@v4
+
+    - name: Setup Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.11'
+
+    - name: Install Dependencies
+      run: |
+        pip install -r requirements.txt
+
+    - name: Run API Tests
+      env:
+        GO_REST_TOKEN: ${{ secrets.GO_REST_TOKEN }}
+      run: |
+        mkdir -p reports
+        pytest tests/ -v \
+          --html=reports/report.html \
+          --self-contained-html \
+          --alluredir=reports/allure-results
+
+    - name: Upload HTML Report
+      uses: actions/upload-artifact@v4
+      if: always()
+      with:
+        name: test-report-html
+        path: reports/report.html
+
+    - name: Upload Allure Results
+      uses: actions/upload-artifact@v4
+      if: always()
+      with:
+        name: allure-results
+        path: reports/allure-results
+
+    - name: Publish Allure Report
+      if: always()
+      uses: simple-elf/allure-report-action@master
+      with:
+        allure-results: reports/allure-results
+        gh-pages: gh-pages
+        keep-reports: 10
