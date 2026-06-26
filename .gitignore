@@ -1,32 +1,28 @@
-ProjectPlan.docx
-reports/report.html
-tests/reports/report.html
-reports/allure-results/076829d2-55fa-4ba5-ade6-93e5e573507c-container.json
-/reports/allure-results
-*.log
-*.pyc
-*.pyc
-*.pyc
-*.pyc
-/utils/__pycache__
-~$ojectPlan.docx
-
-# Environment variables
+# Environment
 .env
 *.env
 
-# Reports & Logs (optional - agar chaho to ignore kar sakte ho)
+# Python cache & bytecode
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+venv/
+.venv/
+ENV/
+
+# Reports & Logs
 reports/
 *.log
 
-# Python cache
-__pycache__/
-*.pyc
-venv/
-.venv/
-
-# OS files
+# OS & IDE
 .DS_Store
 Thumbs.db
+.vscode/
+.idea/
+
+# Temporary
+*.tmp
 __pycache__/
 *.pyc
