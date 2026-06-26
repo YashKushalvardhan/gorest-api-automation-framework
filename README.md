@@ -1,8 +1,10 @@
-# GoREST API Automation Framework
+# GoREST API Automation Framework (Python + Pytest)
 
 ![GitHub Actions](https://github.com/YashKushalvardhan/gorest-api-automation-framework/actions/workflows/ci.yml/badge.svg)
-[![Python](https://img.shields.io/badge/Python-3.11-blue.svg)](https://www.python.org/)
-[![Pytest](https://img.shields.io/badge/Pytest-8.3.3-green.svg)]()
+[![Python](https://img.shields.io/badge/Python-3.11-blue.svg)]()
+[![Pytest](https://img.shields.io/badge/Pytest-9.x-green.svg)]()
+
+Professional REST API Automation Framework covering Users, Posts & Comments modules.
 
 A comprehensive **REST API Automation Framework** built with Python, Pytest, and Requests. Designed to demonstrate professional API testing skills (3+ years experience level).
 
@@ -46,15 +48,11 @@ This framework automates testing for **GoREST API** (https://gorest.co.in/), cov
 
 ##  Key Features
 
-- ✅ Full CRUD operations (Users)
-- ✅ Data-Driven Testing using JSON
-- ✅ Positive + Negative + Edge case testing
-- ✅ Environment configuration (dev/qa/prod ready)
-- ✅ Custom Logging
-- ✅ Schema & Response time validation
-- ✅ Parallel execution support
-- ✅ CI/CD with GitHub Actions
-- ✅ Multiple reporting options
+- Full CRUD Operations (Users, Posts, Comments)
+- Data-Driven Testing
+- Custom Logging
+- CI/CD with GitHub Actions
+- Multiple Reporting (HTML + Allure)
 
 ---
 
@@ -65,6 +63,8 @@ gorest-api-automation-framework/
 ├── tests/
 │   ├── conftest.py          # Fixtures & common setup
 │   ├── test_users.py        # All user-related tests
+│   ├── test_posts.py        #All post-related tests
+│   └── test_comments.py     #All comments-related tests
 │   └── __init__.py
 ├── utils/
 │   ├── helpers.py           # Reusable utilities

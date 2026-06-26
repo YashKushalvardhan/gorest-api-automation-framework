@@ -26,3 +26,6 @@ Thumbs.db
 *.tmp
 __pycache__/
 *.pyc
+ProjectPlan1.docx
+tests/__pycache__/test_posts.cpython-311-pytest-9.1.1.pyc
+~$ojectPlan1.docx
