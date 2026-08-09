@@ -22,11 +22,6 @@ def headers():
 def base_url():
     return BASE_URL
 
-# # Optional: Common response validator
-# def validate_response(response, expected_status=200):
-#     assert response.status_code == expected_status, f"Expected {expected_status}, got {response.status_code}"
-#     assert response.elapsed.total_seconds() < 3, "Response took too long"
-#     return response.json()
 
 def validate_response(response, expected_status=200):
     assert response.status_code == expected_status, \
@@ -35,8 +30,6 @@ def validate_response(response, expected_status=200):
     return response.json()
 
 
-
-# tests/conftest.py ke end mein add karo
 from utils.logger import log_info, log_error
 @pytest.fixture(scope="function", autouse=True)
 def log_test_start(request):
