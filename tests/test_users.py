@@ -47,7 +47,7 @@ def test_create_user(base_url, headers):
 
 def test_get_single_user(base_url, headers):
     """Get existing user by ID"""
-    user_id = 8519404  # GoREST ka public user ID (agar fail ho to change kar dena)
+    user_id = 8573756  # GoREST's public user ID (change if fails)
     response = requests.get(f"{base_url}/users/{user_id}", headers=headers)
     
     assert response.status_code == 200, f"Expected 200, got {response.status_code}"
@@ -57,7 +57,7 @@ def test_get_single_user(base_url, headers):
 
 def test_create_user_invalid_data(base_url, headers):
     """Negative testing - missing required fields"""
-    payload = {"name": "Invalid User"}  # email aur gender missing
+    payload = {"name": "Invalid User"}  # email and gender missing
     response = requests.post(f"{base_url}/users", json=payload, headers=headers)
     
     assert response.status_code == 422, f"Expected 422, got {response.status_code}"
@@ -66,7 +66,7 @@ def test_create_user_invalid_data(base_url, headers):
 
 def test_update_user(base_url, headers):
     """Update existing user"""
-    user_id = 8519404  # public user
+    user_id = 8573756  # public user
     payload = {
         "name": "Yash Updated User",
         "status": "inactive"
@@ -100,7 +100,7 @@ def test_delete_user(base_url, headers):
 # Data Driven Testing
 
 # ==================== Data-Driven Test ====================
-test_data = load_test_data("test_users.json")["users"]   # Ab yahan import ke baad load ho raha hai
+test_data = load_test_data("test_users.json")["users"]   # loading after import
 
 @pytest.mark.parametrize("user_data", test_data)
 def test_create_multiple_users(base_url, headers, user_data):

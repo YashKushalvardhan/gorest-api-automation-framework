@@ -3,7 +3,7 @@ import logging
 import os
 from datetime import datetime
 
-# Log directory ensure karo
+# Log directory ensure
 log_dir = "reports"
 os.makedirs(log_dir, exist_ok=True)
 
@@ -14,7 +14,7 @@ logging.basicConfig(
     format='%(asctime)s | %(levelname)-8s | %(name)s | %(message)s',
     handlers=[
         logging.FileHandler(log_file, encoding='utf-8'),
-        logging.StreamHandler()   # Console pe bhi dikhega
+        logging.StreamHandler()   # To see on Console as well
     ]
 )
 

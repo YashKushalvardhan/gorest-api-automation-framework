@@ -40,7 +40,7 @@ def validate_response(response, expected_status=200):
 from utils.logger import log_info, log_error
 @pytest.fixture(scope="function", autouse=True)
 def log_test_start(request):
-    """Har test ke start aur end mein log karega"""
+    """Logging after every start and end of test"""
     test_name = request.node.name
     log_info(f"🚀 START TEST: {test_name}")
     

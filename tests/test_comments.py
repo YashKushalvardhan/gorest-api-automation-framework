@@ -6,7 +6,7 @@ from utils.logger import log_info
 def test_create_comment(base_url, headers):
     log_info("Creating comment on post")
     payload = {
-        "post_id": 284430,                    # Valid post ID
+        "post_id": 287549,                    # Valid post ID
         "name": "Yash Tester",
         "email": "yash.test@example.com",
         "body": "Great post! Automation testing is awesome."

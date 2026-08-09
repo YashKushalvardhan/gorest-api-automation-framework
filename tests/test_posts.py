@@ -7,7 +7,7 @@ from utils.logger import log_info
 def test_create_post(base_url, headers):
     log_info("Creating a new post")
     payload = {
-        "user_id": 8521886,           # Valid user ID
+        "user_id": 8573753,           # Valid user ID
         "title": "My Automation Test Post",
         "body": "This is a test post created via pytest framework."
     }
