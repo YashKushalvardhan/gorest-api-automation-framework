@@ -47,7 +47,7 @@ def test_create_user(base_url, headers):
 
 def test_get_single_user(base_url, headers):
     """Get existing user by ID"""
-    user_id = 8573756  # GoREST's public user ID (change if fails)
+    user_id = 8601708  # GoREST's public user ID (change if fails)
     response = requests.get(f"{base_url}/users/{user_id}", headers=headers)
     
     assert response.status_code == 200, f"Expected 200, got {response.status_code}"
@@ -66,7 +66,7 @@ def test_create_user_invalid_data(base_url, headers):
 
 def test_update_user(base_url, headers):
     """Update existing user"""
-    user_id = 8573756  # public user
+    user_id = 8601708  # public user
     payload = {
         "name": "Yash Updated User",
         "status": "inactive"
