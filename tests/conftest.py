@@ -7,7 +7,7 @@ import os
 
 load_dotenv()  #  to load variables from .env
 
-BASE_URL = "https://gorest.co.in/public/v2"
+BASE_URL = os.getenv("BASE_URL")
 TOKEN = os.getenv("GO_REST_TOKEN")  
 
 @pytest.fixture(scope="session")
