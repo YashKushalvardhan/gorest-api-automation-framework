@@ -28,6 +28,7 @@ jobs:
     - name: Run API Tests
       env:
         GO_REST_TOKEN: ${{ secrets.GO_REST_TOKEN }}
+        BASE_URL: ${{ secrets.BASE_URL }}
       run: |
         mkdir -p reports
         pytest tests/ -v \
